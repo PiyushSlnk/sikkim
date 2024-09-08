@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+     body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 300%;
+    animation: slide 15s infinite;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(0); }
+    100% { transform: translateX(0); }
+}
+
+.course-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.course-box {
+    display: flex;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.course-image {
+    width: 30%;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.course-details {
+    width: 70%;
+}
+
+.course-details h2 {
+    margin-top: 0;
+}
+
+.course-details p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.course-modules {
+    margin: 20px 0;
+}
+
+.course-modules h3 {
+    margin-bottom: 10px;
+}
+
+.course-modules ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.read-more-btn {
+    background-color: #28a745;
+}
+
+.read-more-btn:hover {
+    background-color: #218838;
+}
+
+</style>
+<body>
+    <!-- Header Slider -->
+    <header class="header-slider">
+        <div class="slider">
+            <img src="slider-image1.jpg" alt="Course Banner 1">
+            <img src="slider-image2.jpg" alt="Course Banner 2">
+            <img src="slider-image3.jpg" alt="Course Banner 3">
+        </div>
+    </header>
+
+    <!-- Course Boxes -->
+    <section class="course-section">
+        <div class="course-box">
+            <img src="course-image.jpg" alt="Course Image" class="course-image">
+            <div class="course-details">
+                <h2>Course Title</h2>
+                <p>Brief course description that provides an overview of what the course is about.</p>
+                <a href="course-details.html" class="btn see-more-btn">See More</a>
+                <div class="course-modules">
+                    <h3>Modules:</h3>
+                    <ul>
+                        <li>Module 1: Introduction</li>
+                        <li>Module 2: Intermediate Concepts</li>
+                        <li>Module 3: Advanced Techniques</li>
+                    </ul>
+                </div>
+                <a href="full-course.html" class="btn read-more-btn">Read More</a>
+            </div>
+        </div>
+
+        <!-- Repeat the course-box div for other courses -->
+    </section>
+
+</body>
+</html>
